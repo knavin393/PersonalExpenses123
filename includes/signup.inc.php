@@ -10,7 +10,7 @@ if (isset($_POST['signup-submit'])) {
 	$cleardb_server = $cleardb_url["us-cdbr-east-06.cleardb.net"];
 	$cleardb_username = $cleardb_url["bf71fc7d365bc5"];
 	$cleardb_password = $cleardb_url["bcf9e4f3"];
-	$cleardb_db = substr($cleardb_url["path"],1);
+	$cleardb_db = substr($cleardb_url["https://www.cleardb.com/service/1.0/api"],1);
 	$active_group = 'default';
 	$query_builder = TRUE;
 	// Connect to DB
