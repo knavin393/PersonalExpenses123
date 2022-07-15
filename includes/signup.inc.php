@@ -4,18 +4,7 @@
 <?php
 if (isset($_POST['signup-submit'])) {
 
-	
-	//Get Heroku ClearDB connection information
-	$cleardb_url = parse_url(getenv("https://www.cleardb.com/service/1.0/api"));
-	$cleardb_server = $cleardb_url["us-cdbr-east-06.cleardb.net"];
-	$cleardb_username = $cleardb_url["bf71fc7d365bc5"];
-	$cleardb_password = $cleardb_url["bcf9e4f3"];
-	$cleardb_db = substr($cleardb_url["https://www.cleardb.com/service/1.0/api"],1);
-	$active_group = 'default';
-	$query_builder = TRUE;
-	// Connect to DB
-	$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-	
+require '../dbconfigs/dbh.inc.php';
 
 $username = $_POST['uid'];
 $email = $_POST['mail'];
