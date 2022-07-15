@@ -54,8 +54,8 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;
-$mail->Username = "knavin393@gmail.com"; //enter you email address
-$mail->Password = 'Manchula'; //enter you email password
+$mail->Username = 
+$mail->Password = 
 $mail->Port = 465;
 $mail->SMTPSecure = "ssl";
 
