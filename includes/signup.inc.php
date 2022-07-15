@@ -6,7 +6,7 @@ if (isset($_POST['signup-submit'])) {
 
 	
 	//Get Heroku ClearDB connection information
-	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+	$cleardb_url = parse_url(getenv("https://www.cleardb.com/service/1.0/api"));
 	$cleardb_server = $cleardb_url["us-cdbr-east-06.cleardb.net"];
 	$cleardb_username = $cleardb_url["bf71fc7d365bc5"];
 	$cleardb_password = $cleardb_url["bcf9e4f3"];
