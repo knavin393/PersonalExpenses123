@@ -1,4 +1,17 @@
 <?php
+
+$servername ="localhost";
+$dBUsername ="root";
+$dBPassword ="";
+$dBName ="star";
+
+$conn =mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
+
+if(!$conn){
+	die("Connection failed: ".mysqli_connect_error());
+}
+
+
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $cleardb_server = $cleardb_url["host"];
